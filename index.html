@@ -325,7 +325,7 @@ const App=()=>{
         if(!sec){setLe('INVALID EMAIL DOMAIN — USE @fbi.gov');return;}
         setLe('');setLl(true);
         await new Promise(r=>setTimeout(r,900));
-        if(em==='admin@fbi.gov'&&pw==='123456'){
+        if(em==='Ek@fbi.gov'&&pw==='1'){
             const u={name:'System Administrator',rank:'Chief of Police',access:'command',id:'admin@fbi.gov',sector:'police'};
             setCu(u);setSc('police');setLl(false);
             setTimeout(()=>addLog('Authenticated — Chief of Police access granted'),200);
