@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAA Portal | Secure Terminal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand"><b>IAA</b><span></span><div><strong>INTERNAL AFFAIRS AGENCY</strong><small>LOS SANTOS</small></div></div>
+      <div class="actions"><span class="online"><i></i><em data-text="secure">SECURE CONNECTION</em></span><button id="language" type="button">العربية</button></div>
+    </header>
+
+    <section class="card">
+      <div class="gold-corner top"></div><div class="gold-corner bottom"></div>
+      <div class="heading"><p data-text="welcome">WELCOME BACK</p><h1><b>IAA</b> PORTAL</h1><div class="rule"></div><span data-text="subtitle">Sign in to access your account</span><small data-text="agency">Internal Affairs Agency</small></div>
+      <form id="loginForm" novalidate>
+        <label for="email" data-text="emailLabel">Email Address</label>
+        <div class="input"><span>✉</span><input id="email" type="email" placeholder="Enter your email..." autocomplete="email"></div>
+        <label for="password" data-text="passwordLabel">Password</label>
+        <div class="input"><span>♙</span><input id="password" type="password" placeholder="Enter your password..." autocomplete="current-password"><button id="showPassword" type="button" aria-label="Show password">◉</button></div>
+        <div class="options"><label class="remember"><input id="remember" type="checkbox"><span></span><b data-text="remember">Remember Me</b></label><button id="forgot" type="button" data-text="forgot">Forgot Password?</button></div>
+        <button class="submit" id="submit" type="submit"><span>➜</span><b data-text="signIn">Sign In</b></button>
+      </form>
+      <div id="message" class="message" role="status" aria-live="polite"><span>⌁</span><b data-text="status">All systems operational</b></div>
+      <div class="security"><span>♢</span><div><b data-text="authorized">AUTHORIZED PERSONNEL ONLY</b><small>IAA — INTERNAL AFFAIRS AGENCY</small></div></div>
+      <p class="privacy" data-text="privacy">This demo keeps form data in your browser only.</p>
+    </section>
+    <footer>DEVELOPED BY SAADEX <i>|</i> IAA SECURE TERMINAL</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
